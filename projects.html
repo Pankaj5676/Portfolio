@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Pankaj Bhogade</div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="navLinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Pankaj_Bhogade_Resume.pdf" download>Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="projects">
+        <div class="container">
+            <h4 class="highlight">Projects</h4>
+            <div class="project-item">
+                <h2>File Packer Unpacker</h2>
+                <p class="details"><b>Technologies:</b> Core Java</p>
+                <b><p class="details">Description of Project:</p></b>
+                <p>•In this Project, we can handle two task like Packing and Unpacking.<br>
+                • In Packing, we take input as Directory name & regular file name in which u want to create.<br>
+                • By using this project we can fetch data from all files and merge it into one file, as well as we can also extract
+                  all packed file whenever required.<br></p>
+            </div>
+            <div class="project-item">
+                <h2>Banking Management System</h2>
+                <p class="details"><b>Technologies:</b>Java, Spring Boot, Sql, HTML, CSS, JS</p>
+                <b><p class="details">Description of Project:</p></b>
+                • In this Project, we allow customers to perform various actions such Check Balance and view Account details ext.<br>
+                • In BMS, we allow customers to login/logout function and also they can view their profile & update it.<br>
+                • Implemented Object-Oriented Design principles.<br>
+            </div>
+            <div class="project-item">
+                <h2>Daily Task Management</h2>
+                <p class="details"><b>Technologies:</b>Java, Spring Boot, Sql, HTML, CSS, JS</p>
+                <b><p class="details">Description of Project:</p></b>
+                • STM is basically a "Java Web based Project".<br>
+                • in that we maintain the some task which will be happens in the Daily life. <br>
+                • We can add task ,mark task status(complete/incomplete),delete completed task.<br>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pankaj Bhogade. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById('navLinks');
+            var menuIcon = document.querySelector('.menu-icon i');
+
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                navLinks.style.display = 'flex';
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-times');
+            }
+        }
+    </script>
+</body>
+</html>
